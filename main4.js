@@ -28,7 +28,7 @@ class Trainers {
     })
   }
 }
-
+// console.log(Trainers)
 // to define the trainer as individual 
 class Trainer {
   constructor(name){
@@ -40,6 +40,7 @@ class Trainer {
   add(pokemon){
   this.pokemon.push(pokemon)
   } 
+
 //adds the pokemon to the pokemon array 
   get(name) {
     return this.pokemon.find((element) => {
@@ -65,10 +66,8 @@ class Pokemon {
 }
 
 
-
 // selecting ol from the html side
 let ol = document.querySelector("ol")
-
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -78,13 +77,12 @@ axios.get("https://fizal.me/pokeapi/api/4.json")
 
   let data = response.data
   
-  let charmander = new Pokemon(data)
- hakuna_matata.add(charmander)
- console.log(charmander)
-//  console.log(Trainer.get("charmander"))
+ let charmander = new Pokemon(data);
+ hakuna_matata.add(charmander);
+ console.log(hakuna_matata.get("charmander"));
 
  let first_pokemon = document.createElement("ol")
- first_pokemon.innerHTML = [`Name:\xa0${charmander.name}\xa0`+
+ first_pokemon.innerHTML =[`Name:\xa0${charmander.name}\xa0`+
  `\xa0\xa0\xa0\xa0\xa0\xa0\xa0`+ `` + `\xa0\xa0\xa0\xa0\xa0\xa0\xa0` +`
  Attack Interger:\xa0${charmander.attack}`+
  `\xa0\xa0\xa0\xa0\xa0\xa0\xa0`+`
@@ -97,12 +95,23 @@ HP Integer:\xa0${charmander.Hp}`]
 
  ol.appendChild(first_pokemon)
  
+//  let name = document.getElementsByTagName("ol")
  
+//  let li = document.createElement('li')
 
+//  let uno = document.createElementById('name')
+//  name.innerHTML = li
 
-}).catch((error) => {
-  console.log(error)
-})
+// console.log(uno)
+
+//  li.innerHTML = charmander.name
+// //  name.innerHTML = charmander.name
+// //  console.log(charmander.name)
+
+  }).catch((error) => {
+    console.log(error)
+  })
+
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
@@ -111,13 +120,11 @@ HP Integer:\xa0${charmander.Hp}`]
 axios.get("https://fizal.me/pokeapi/api/131.json")
 .then((response) => {
 
-
   let data = response.data
   let lapras = new Pokemon(data)
   console.log(lapras)
   hakuna_matata.add(lapras)
-  // console.log(Trainer.get("lapras"))
-
+  console.log(hakuna_matata.get("lapras"))
 
 let second_pokemon = document.createElement("dl")
 second_pokemon.innerHTML = [`Name:\xa0${lapras.name}\xa0`+
@@ -139,7 +146,6 @@ HP Integer:\xa0${lapras.Hp}`]
   console.log(error)
 })
 
-
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 let dt = document.querySelector("dt")
 // retrieve data from hosted pokemon-150 json file
@@ -150,7 +156,7 @@ axios.get("https://fizal.me/pokeapi/api/150.json")
   let mewtwo = new Pokemon(data)
   console.log(mewtwo)
   hakuna_matata.add(mewtwo)
-  // console.log(Trainer.get("mewtwo"))
+  console.log(hakuna_matata.get("mewtwo"))
 
   let third_pokemon = document.createElement("dt")
   third_pokemon.innerHTML = [`Name:\xa0${mewtwo.name}\xa0`+
@@ -170,6 +176,7 @@ axios.get("https://fizal.me/pokeapi/api/150.json")
 }).catch((error) => {
   console.log(error)
 })
+
 
 
 

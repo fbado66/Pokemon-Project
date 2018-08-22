@@ -67,17 +67,10 @@ h4 {
   grid-column: 4/5;
   grid-row: 2/5; }
 
-ol, dl, dt {
-  padding: 21px;
+ol {
+  padding: 22px;
   color: bisque; }
 
-p{
-  font-size: 20px;
-}
-
-h3{
-  font-size: 30px;
-}
 /* 
 pokedex layout  */
 .myrow1 {
