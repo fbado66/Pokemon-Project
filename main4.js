@@ -59,7 +59,7 @@ class Pokemon {
     this.name = data.name,
     this.attack = data.stats[4].base_stat,
     this.defense = data.stats[3].base_stat,
-    this.abilities = [`${data.abilities[0].ability.name}`+ `\xa0\xa0\xa0\xa0\xa0\xa0\xa0`+ `${data.abilities[1].ability.name}`],
+    this.abilities = [`${data.abilities[0].ability.name}`+ `\xa0\xa0\xa0\xa0`+ `${data.abilities[1].ability.name}`],
     this.Hp = data.stats[5].base_stat
   } 
 }
@@ -84,19 +84,16 @@ axios.get("https://fizal.me/pokeapi/api/4.json")
 //  console.log(Trainer.get("charmander"))
 
  let first_pokemon = document.createElement("ol")
- first_pokemon.innerHTML = [`Name:${charmander.name}`+
- `\xa0\xa0\xa0\xa0\xa0\xa0\xa0`+ `
- Attack Interger:${charmander.attack}`+
+ first_pokemon.innerHTML = [`Name:\xa0${charmander.name}\xa0`+
+ `\xa0\xa0\xa0\xa0\xa0\xa0\xa0`+ `` + `\xa0\xa0\xa0\xa0\xa0\xa0\xa0` +`
+ Attack Interger:\xa0${charmander.attack}`+
  `\xa0\xa0\xa0\xa0\xa0\xa0\xa0`+`
 Defense Integer:   ${charmander.defense}`+
 `\xa0\xa0\xa0\xa0\xa0\xa0\xa0`+`
-Abilities:`+  
-`\xa0\xa0\xa0\xa0\xa0\xa0\xa0`+
-`\xa0\xa0\xa0\xa0\xa0\xa0\xa0`+
-`\xa0\xa0\xa0\xa0\xa0\xa0\xa0`+`
+Abilities: `+``+`
  ${charmander.abilities}`+
- `\xa0\xa0\xa0\xa0\xa0\xa0\xa0`+`
-HP Integer:${charmander.Hp}`]
+ `\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0`+`
+HP Integer:\xa0${charmander.Hp}`]
 
  ol.appendChild(first_pokemon)
  
@@ -123,19 +120,16 @@ axios.get("https://fizal.me/pokeapi/api/131.json")
 
 
 let second_pokemon = document.createElement("dl")
-second_pokemon.innerHTML = [`Name:${lapras.name}`+
- `\xa0\xa0\xa0\xa0\xa0\xa0\xa0`+ `
- Attack Interger:${lapras.attack}`+
- `\xa0\xa0\xa0\xa0\xa0\xa0\xa0`+`
+second_pokemon.innerHTML = [`Name:\xa0${lapras.name}\xa0`+
+`\xa0\xa0\xa0\xa0\xa0\xa0\xa0`+ `` + `\xa0\xa0\xa0\xa0\xa0\xa0\xa0` +`
+Attack Interger:\xa0${lapras.attack}`+
+`\xa0\xa0\xa0\xa0\xa0\xa0\xa0`+`
 Defense Integer:   ${lapras.defense}`+
 `\xa0\xa0\xa0\xa0\xa0\xa0\xa0`+`
-Abilities:`+  
-`\xa0\xa0\xa0\xa0\xa0\xa0\xa0`+
-`\xa0\xa0\xa0\xa0\xa0\xa0\xa0`+
-`\xa0\xa0\xa0\xa0\xa0\xa0\xa0`+`
- ${lapras.abilities}`+
- `\xa0\xa0\xa0\xa0\xa0\xa0\xa0`+`
-HP Integer:${lapras.Hp}`]
+Abilities: `+``+`
+${lapras.abilities}`+
+`\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\ `+`
+HP Integer:\xa0${lapras.Hp}`]
 
  dl.appendChild(second_pokemon)
 
@@ -159,19 +153,16 @@ axios.get("https://fizal.me/pokeapi/api/150.json")
   // console.log(Trainer.get("mewtwo"))
 
   let third_pokemon = document.createElement("dt")
-  third_pokemon.innerHTML = [`Name:${mewtwo.name}`+
-   `\xa0\xa0\xa0\xa0\xa0\xa0\xa0`+ `
-   Attack Interger:${mewtwo.attack}`+
-   `\xa0\xa0\xa0\xa0\xa0\xa0\xa0`+`
+  third_pokemon.innerHTML = [`Name:\xa0${mewtwo.name}\xa0`+
+  `\xa0\xa0\xa0\xa0\xa0\xa0\xa0`+ `` + `\xa0\xa0\xa0\xa0\xa0\xa0\xa0` +`
+  Attack Interger:\xa0${mewtwo.attack}`+
+  `\xa0\xa0\xa0\xa0\xa0\xa0\xa0`+`
   Defense Integer:   ${mewtwo.defense}`+
   `\xa0\xa0\xa0\xa0\xa0\xa0\xa0`+`
-  Abilities:`+  
-  `\xa0\xa0\xa0\xa0\xa0\xa0\xa0`+
-  `\xa0\xa0\xa0\xa0\xa0\xa0\xa0`+
-  `\xa0\xa0\xa0\xa0\xa0\xa0\xa0`+`
-   ${mewtwo.abilities}`+
-   `\xa0\xa0\xa0\xa0\xa0\xa0\xa0`+`
-  HP Integer:${mewtwo.Hp}`]
+  Abilities: `+``+`
+  ${mewtwo.abilities}`+
+  `\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\ `+`
+  HP Integer:\xa0${mewtwo.Hp}`]
   
    dt.appendChild(third_pokemon)
 
