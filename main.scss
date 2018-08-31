@@ -121,16 +121,22 @@ pokedex layout  */
 
 
 
-#panel, #panel_2, #panel_3, .flip1 .flip2 {
+#panel_4, #panel_2, #panel_3, .flip1 .flip2 {
   font-size: 23px;
+  padding: 15px;
+  text-align: left;
+  // background-color: red;
+  color: black;
+  border: solid 1px #a6d8a8;
+  margin: auto;
+}
+
+#panel_4{
+font-size: 23px;
   padding: 15px;
   text-align: left;
   background-color: red;
   color: black;
   border: solid 1px #a6d8a8;
   margin: auto;
-}
-
-#panel {
-  display: none;
 }
