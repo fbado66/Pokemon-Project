@@ -1,3 +1,4 @@
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; }
 
@@ -95,19 +96,16 @@ pokedex layout  */
 
 .mysubheader {
   color: white;
-  background-color: #00001f;
+  background-color: goldenrod;
   text-shadow: #a6d8a8; }
 
-#panel, #panel_2, #panel_3, .flip1 .flip2 {
+#panel, #panel_2, #panel_3 {
   font-size: 23px;
   padding: 15px;
   text-align: left;
-  background-color: red;
-  color: black;
-  border: solid 1px #a6d8a8;
+  color:white;
   margin: auto; }
 
-#panel {
-  display: none; }
+
 
 /*# sourceMappingURL=main.css.map */
