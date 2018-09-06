@@ -16,7 +16,7 @@ class Trainer{
 }
 
   all() {  
-    return this.pokemon
+    return this.pokemon_array
 }
 
   get(name) {
